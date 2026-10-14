@@ -1,0 +1,13 @@
+Source: 0d1n-debian
+Section: web
+Priority: optional
+Maintainer: Rhaniere Vieira <rhaniere@localhost>
+Build-Depends: debhelper (>= 12), libcurl4-openssl-dev
+Standards-Version: 4.6.2
+
+Package: 0d1n-debian
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fork Debian do 0d1n com JSON, rate-limit e empacotamento nativo
+ Fork do 0d1n (CoolerVoid) preparado para Debian/Parrot, com exportacao
+ JSON, --delay e pacote .deb. Creditos ao autor original mantidos.

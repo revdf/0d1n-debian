@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	mkdir -p debian/0d1n-debian/usr/bin
+	mkdir -p debian/0d1n-debian/opt/0d1n-debian/view/response_sources
+	mkdir -p debian/0d1n-debian/opt/0d1n-debian/payloads
+	cp bin/0d1n-debian debian/0d1n-debian/usr/bin/0d1n-debian
+	cp -rf templates debian/0d1n-debian/opt/0d1n-debian/ 2>/dev/null || true
+	cp -rf tables debian/0d1n-debian/opt/0d1n-debian/view/ 2>/dev/null || true
+	cp -rf payloads debian/0d1n-debian/opt/0d1n-debian/ 2>/dev/null || true
+	chmod 0755 -R debian/0d1n-debian/opt/0d1n-debian

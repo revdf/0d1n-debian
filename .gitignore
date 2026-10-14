@@ -1,0 +1,25 @@
+# Build C
+*.o
+*.a
+bin/
+0d1n_viewer/bin/
+
+# Debian packaging artifacts (manter control/changelog/rules/compat)
+debian/0d1n/
+debian/0d1n-debian/
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/*.substvars
+debian/*.log
+
+# Pacotes gerados
+*.deb
+*.buildinfo
+*.changes
+
+# Editor / SO
+*.swp
+*~
+.DS_Store
+*.log

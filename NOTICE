@@ -1,0 +1,19 @@
+0d1n-debian
+===========
+
+This project is a Debian/Parrot-oriented fork of 0d1n.
+
+Original project
+----------------
+Name:    0d1n
+Author:  Antonio Carlos Costa da Silva (CoolerVoid / Cooler_)
+Upstream: https://github.com/CoolerVoid/0d1n
+License: see LICENSE (BSD 3-Clause) and source headers
+
+Fork maintainer
+---------------
+Name:    Rhaniere Vieira
+Changes: Debian packaging (.deb), --json export, --delay rate-limiting,
+         and related stability fixes for the report lifecycle.
+
+The original copyright and license notices must be retained.
