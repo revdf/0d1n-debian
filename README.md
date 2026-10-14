@@ -29,7 +29,8 @@ sudo apt-get install libcurl4-openssl-dev debhelper
 ## Compilar
 
 ```bash
-cd 0d1n-OdinV38
+git clone https://github.com/revdf/0d1n-debian.git
+cd 0d1n-debian
 make
 ./bin/0d1n-debian --help
 ```
@@ -37,7 +38,7 @@ make
 ## Gerar e instalar o .deb (Parrot/Debian)
 
 ```bash
-cd 0d1n-OdinV38
+cd 0d1n-debian
 dpkg-buildpackage -us -uc -b
 sudo dpkg -i ../0d1n-debian_3.8-1_amd64.deb
 sudo apt install -f   # se faltar dependencia
